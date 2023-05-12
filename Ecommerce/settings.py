@@ -47,6 +47,10 @@ INSTALLED_APPS = [
     'Api.SubCategory',
     'Api.Order',
     'Api.Login',
+    'Api.Signup',
+    'Api.Carts',
+    'Api.Address',
+    'Api.Profile',
 
 
     'rest_framework',
@@ -70,7 +74,7 @@ ROOT_URLCONF = 'Ecommerce.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'reactpart/build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

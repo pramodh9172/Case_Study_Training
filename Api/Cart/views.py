@@ -32,8 +32,8 @@ class CartView(APIView):
         if not carts.exists():
             return Response("not found")
 
-        for cart in carts:
-            serializer = CartSerializer(cart, data=request.data, partial=True)
+        for cartex in carts:
+            serializer = CartSerializer(cartex, data=request.data, partial=True)
             if serializer.is_valid():
                 serializer.save()
 

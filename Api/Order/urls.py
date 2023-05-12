@@ -2,5 +2,5 @@ from django.urls import path
 from .views import orderview
 
 urlpatterns = [
-    path('order/<int:userid>/', orderview.as_view()),
+    path('<int:userid>/', orderview.as_view()),
 ]   

@@ -9,7 +9,7 @@ class products(models.Model):
     name=models.CharField(default='',max_length=50)
     price=models.IntegerField(default=0)
     details=models.TextField(default='',max_length=100)
-    image=models.ImageField(default='',upload_to='media/uploaded_pics', height_field=None, width_field=None, max_length=None)
+    image=models.ImageField(default='',upload_to='uploaded_pics', height_field=None, width_field=None, max_length=None)
     category=models.ForeignKey('Category.category', default="", on_delete=models.CASCADE)
     subcategory=models.ForeignKey('SubCategory.subcategory',default="",on_delete=models.CASCADE)
 

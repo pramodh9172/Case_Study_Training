@@ -11,13 +11,13 @@ urlpatterns = [
 
     path('category/',include('Api.Category.urls')),
     path('login/',include('Api.Login.urls')),
-   # path('signup/',include('Api.Signup.urls')),1
+    path('signup/',include('Api.Signup.urls')),
     path('product/',include('Api.Product.urls')),
-    # path('carts/',include('Api.Carts.urls')),11
+    path('carts/',include('Api.Carts.urls')),
     path('cart/',include('Api.Cart.urls')),
     # path('cartitem/',include('Api.Cartitem.urls')),
     path('order/',include('Api.Order.urls')),
-    #  path('address/',include('Api.Address.urls')),2
-    # path('profile/',include('Api.Profileapp.urls')),3
+    path('address/',include('Api.Address.urls')),
+    path('profile/',include('Api.Profile.urls')),
     path('subcategory/',include('Api.SubCategory.urls')),
 ]
